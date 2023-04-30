@@ -5,8 +5,8 @@ db.createCollection('product',{
             required : ["brand", "graduation", "frame", "frame_color", "glass_color", "price", "supplier_id"],
             properties : {
                 brand : {
-                    bsonType : "string",
-                    description : "this should be an string type and is required"
+                    bsonType : "objectId",
+                    description : "this should be an objectId type and is required"
                 },
                 graduation :{
                     bsonType : "int",
@@ -29,8 +29,8 @@ db.createCollection('product',{
                     description : "this should be an int type and is required"
                 },
                 supplier_id : {
-                    bsonType : "int",
-                    description : "this should be an int type and is required"
+                    bsonType : "objectId",
+                    description : "this should be an objectId type and is required"
                 }
 
             }
@@ -38,4 +38,4 @@ db.createCollection('product',{
         }
     }
 
-})
+});
