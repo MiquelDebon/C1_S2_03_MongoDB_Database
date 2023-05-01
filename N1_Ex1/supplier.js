@@ -2,6 +2,7 @@ db.createCollection('supplier',{
     validator: {
         $jsonSchema : {
             bsonType: "object",
+            title : "Supplier Validation",
             required : ["name", "direction", "phone", "fax", "nif"],
             properties : {
                 name : {
@@ -10,7 +11,7 @@ db.createCollection('supplier',{
                 },
                 direction :{
                     bsonType : "object",
-                    requiered : ["street", "number", "pis", "porta" ,"ciutat", "codi_postal", "pais"],
+                    required : ["street", "number", "pis", "porta" ,"ciutat", "codi_postal", "pais"],
                     properties : {
                         street :{
                             bsonType : "string",
@@ -60,4 +61,4 @@ db.createCollection('supplier',{
         }
     }
 
-})
+});

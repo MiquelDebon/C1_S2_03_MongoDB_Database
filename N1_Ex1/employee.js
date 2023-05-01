@@ -2,6 +2,7 @@ db.createCollection('employee',{
     validator: {
         $jsonSchema : {
             bsonType: "object",
+            title : "Employee Validation",
             required : ["name"],
             properties : {
                 name : {

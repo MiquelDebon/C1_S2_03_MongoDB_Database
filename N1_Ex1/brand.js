@@ -2,6 +2,7 @@ db.createCollection('brand',{
     validator: {
         $jsonSchema : {
             bsonType: "object",
+            title : "Brand Validation",
             required : ["name", "supplier_id"],
             properties : {
                 name : {

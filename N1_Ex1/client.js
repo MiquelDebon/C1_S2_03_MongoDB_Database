@@ -2,6 +2,7 @@ db.createCollection('client',{
     validator: {
         $jsonSchema : {
             bsonType: "object",
+            title : "Client Validation",
             required : ["name", "surname", "cp", "mail", "register_date", "by_client_id"],
             properties : {
                 name : {
