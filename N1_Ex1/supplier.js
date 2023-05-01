@@ -18,16 +18,16 @@ db.createCollection('supplier',{
                             description : "this should be an string type and is required"
                         },
                         number :{
-                            bsonType : "string",
-                            description : "this should be an string type and is required"
+                            bsonType : "int",
+                            description : "this should be an int type and is required"
                         },
                         pis :{
-                            bsonType : "string",
-                            description : "this should be an string type and is required"
+                            bsonType : "int",
+                            description : "this should be an int type and is required"
                         },
                         porta :{
-                            bsonType : "string",
-                            description : "this should be an string type and is required"
+                            bsonType : "int",
+                            description : "this should be an int type and is required"
                         },
                         ciutat : {
                             bsonType : "string",
@@ -55,10 +55,7 @@ db.createCollection('supplier',{
                     bsonType : "string",
                     description : "this should be a string type and is required"
                 }
-
             }
-
         }
     }
-
 });
